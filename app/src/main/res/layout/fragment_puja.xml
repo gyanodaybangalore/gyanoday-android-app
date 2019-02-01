@@ -1,0 +1,31 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorSmockGray"
+    tools:context="com.gdjt.gyanoday.fragment.PujaFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/sv_puja"
+            android:layout_width="match_parent"
+            android:background="@color/colorWhite"
+            android:layout_alignParentStart="true"
+            app:queryHint="@string/PujaSearchHint"
+            android:layout_alignParentTop="true"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_puja"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_below="@+id/sv_puja"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+</FrameLayout>

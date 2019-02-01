@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_row_data_list_main"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardElevation="1dp"
+        card_view:contentPadding="1dp"
+        card_view:cardPreventCornerOverlap="true"
+        card_view:cardUseCompatPadding="true"
+        android:padding="@dimen/margin_5"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/margin_10"
+            android:layout_height="wrap_content"
+            android:background="@color/colorInnerScreenSecondary">
+            <ImageView
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/iv_item_row_trust_icon"
+                android:layout_width="5dp"
+                android:layout_height="50dp"
+                android:src="@drawable/water_logo"
+                android:layout_margin="@dimen/margin_5"
+                android:visibility="invisible"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/ll_row_temple_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_toEndOf="@+id/iv_item_row_trust_icon"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_row_temple_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorTextTitle"
+                    android:textSize="@dimen/textSize_20" />
+
+                <TextView
+                    android:id="@+id/tv_row_temple_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorTextSubTitle"
+                    android:textSize="@dimen/textSize_14" />
+                <TextView
+                    android:id="@+id/tv_row_data_temple_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorTextSubTitle"
+                    android:textSize="@dimen/textSize_14" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_row_temple_landmark"
+                android:layout_width="match_parent"
+                android:layout_toEndOf="@+id/iv_item_row_trust_icon"
+                android:layout_below="@+id/ll_row_temple_detail"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginEnd="@dimen/margin_10"
+                >
+                <TextView
+                    android:id="@+id/tv_row_temple_landmark_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/colorRed"
+                    android:textSize="@dimen/textSize_12" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_row_temple_contact"
+                android:layout_width="match_parent"
+                android:layout_toEndOf="@+id/iv_item_row_trust_icon"
+                android:layout_below="@+id/ll_row_temple_landmark"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginEnd="@dimen/margin_10"
+                >
+                <TextView
+                    android:id="@+id/tv_row_temple_contact_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ContactLabel"
+                    android:textColor="@color/colorTextSubTitle"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/tv_row_temple_contact_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:textColor="@color/colorTextSubTitle"
+                    android:textSize="@dimen/textSize_14" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_row_temple_food_stay"
+                android:layout_width="match_parent"
+                android:weightSum="2"
+                android:layout_toEndOf="@+id/iv_item_row_trust_icon"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_below="@+id/ll_row_temple_contact"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginEnd="@dimen/margin_10"
+                    >
+                    <TextView
+                        android:id="@+id/tv_row_temple_stay_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/StayLabel"
+                        android:textColor="@color/colorTextSubTitle"
+                        android:textSize="@dimen/textSize_14" />
+
+                    <TextView
+                        android:id="@+id/tv_row_temple_stay_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_5"
+                        android:textColor="@color/colorTextSubTitle"
+                        android:textSize="@dimen/textSize_14" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginEnd="@dimen/margin_10"
+                    >
+                    <TextView
+                        android:id="@+id/tv_row_temple_food_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/FoodLabel"
+                        android:textColor="@color/colorTextSubTitle"
+                        android:textSize="@dimen/textSize_14" />
+
+                    <TextView
+                        android:id="@+id/tv_row_temple_food_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_5"
+                        android:textColor="@color/colorTextSubTitle"
+                        android:textSize="@dimen/textSize_14" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_row_temple_map"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignEnd="@+id/ll_row_temple_food_stay"
+                android:layout_below="@+id/ll_row_temple_food_stay"
+                android:layout_gravity="center"
+                android:background="@drawable/round_corner_shape"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_marginTop="@dimen/margin_10"
+                android:text="@string/MapDirection"
+                android:textAllCaps="false"
+                android:textColor="@color/colorNiyamNormal"
+                android:textSize="@dimen/textSize_14" />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+
+</LinearLayout>

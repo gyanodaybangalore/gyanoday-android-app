@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.alkoot.MyPolicyActivity">
+    <item
+        android:id="@+id/action_notification"
+        android:title="@string/HomeNotification"
+        android:orderInCategory="1"
+        app:actionLayout="@layout/policy_action_layout"
+        app:showAsAction="always|withText"/>
+</menu>

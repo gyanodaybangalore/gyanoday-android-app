@@ -1,0 +1,62 @@
+﻿[{
+		"id": 1,
+		"h_name": "ट्रस्टी",
+		"e_name": "About Trust",
+		"action_index": 1,
+		"img_path": "",
+		"img_type": 1
+	},
+	{
+		"id": 2,
+		"h_name": "संपर्क करे",
+		"e_name": "Contact Us",
+		"action_index": 2,
+		"img_path": "",
+		"img_type": 1
+	},
+
+	{
+		"id": 3,
+		"h_name": "अपने सुझाव दे।",
+		"e_name": "Feedback",
+		"action_index": 3,
+		"img_path": "",
+		"img_type": 1
+	},
+
+	{
+		"id": 4,
+		"h_name": "फोटो गैलरी",
+		"e_name": "Galary",
+		"action_index": 4,
+		"img_path": "",
+		"img_type": 1
+	},
+
+	{
+		"id": 5,
+		"h_name": "जैन मंदिर और क्षेत्र (बैंगलोर के पास)",
+		"e_name": "Jain Mandire and Tirth (Bangalore Area)",
+		"action_index": 5,
+		"img_path": "",
+		"img_type": 1
+	},
+
+	{
+		"id": 6,
+		"h_name": "दान",
+		"e_name": "Donation",
+		"action_index": 6,
+		"img_path": "",
+		"img_type": 1
+	},
+
+	{
+		"id": 7,
+		"h_name": "नियम चुने",
+		"e_name": "Niyam",
+		"action_index": 7,
+		"img_path": "",
+		"img_type": 1
+	}
+]

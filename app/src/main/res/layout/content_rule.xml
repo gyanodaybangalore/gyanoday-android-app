@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@drawable/home_gradient"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".screens.RuleActivity"
+    tools:showIn="@layout/activity_rule">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+        <TextView
+            android:id="@+id/tv_niyam_cat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/margin_16"
+            android:gravity="center_horizontal"
+            android:text="@string/NiyamCategoryLabel"
+            android:textColor="@color/colorTextTitle"
+            android:textSize="@dimen/textSize_20" />
+
+        <LinearLayout
+            android:id="@+id/ll_niyam_cat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_niyam_cat"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btn_niyam_child"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/app_hor_margin"
+                android:layout_marginStart="@dimen/app_hor_margin"
+                android:layout_weight="1"
+                android:background="@drawable/round_corner_shape"
+                android:text="@string/NiyamChildBtnText"
+                android:textAllCaps="false"
+                android:textColor="@color/colorNiyamNormal"
+                android:textSize="@dimen/textSize_18" />
+
+            <Button
+                android:id="@+id/btn_niyam_adult"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/app_hor_margin"
+                android:layout_marginStart="@dimen/app_hor_margin"
+                android:layout_weight="1"
+                android:background="@drawable/round_corner_shape"
+                android:text="@string/NiyamAdultBtnText"
+                android:textAllCaps="false"
+                android:textColor="@color/colorNiyamNormal"
+                android:textSize="@dimen/textSize_18" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_niyam_choose"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/ll_niyam_cat"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_bg_cicle"
+            android:padding="15dp"
+            android:text="@string/NiyamBtnText"
+            android:textColor="@color/colorNiyamNormal" />
+
+        <LinearLayout
+            android:id="@+id/ll_niyam_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_niyam_choose"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_niyam_details_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_10"
+                android:gravity="center_horizontal"
+                android:text="@string/NiyamDetailsTitle"
+                android:textColor="@color/colorTextTitle"
+                android:textSize="@dimen/textSize_25" />
+
+
+            <TextView
+                android:id="@+id/tv_niyam_details_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/margin_16"
+                android:textColor="@color/colorTextTitle"
+                android:textSize="@dimen/textSize_30" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

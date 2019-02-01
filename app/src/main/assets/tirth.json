@@ -1,0 +1,29 @@
+﻿[
+  {
+    "id": 1,
+    "h_name": "बैंगलोर - दिगंबर जैन मंदिर",
+    "e_name": "Bangalore - Digambar Jain Temples",
+    "img_path": "",
+    "action_index": 1,
+    "img_type": 1,
+    "text_val": "none"
+  },
+  {
+    "id": 2,
+    "h_name": "कर्णाटक दर्शन ",
+    "e_name": "Karnataka Darshan",
+    "img_path": "",
+    "action_index": 2,
+    "img_type": 1,
+    "text_val": "none"
+  },
+  {
+    "id": 3,
+    "h_name": "तमिलनाडु दर्शन",
+    "e_name": "Tamilnadu Darshan",
+    "img_path": "",
+    "action_index": 3,
+    "img_type": 1,
+    "text_val": "none"
+  }
+]

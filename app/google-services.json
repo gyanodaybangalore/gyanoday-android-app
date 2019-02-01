@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "116233343035",
+    "firebase_url": "https://gyanoday-ac401.firebaseio.com",
+    "project_id": "gyanoday-ac401",
+    "storage_bucket": "gyanoday-ac401.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:116233343035:android:7961324b8e3fcfe2",
+        "android_client_info": {
+          "package_name": "com.gdjt.gyanoday"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "116233343035-22enbv8f1ln81q6cshb01k37am5al2q3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAz3SorkNcQ5ePepVV-A2jI_h4sCGnQ8Vo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

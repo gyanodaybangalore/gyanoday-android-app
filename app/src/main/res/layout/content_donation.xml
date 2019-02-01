@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_gradient"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".screens.DonationActivity"
+    tools:showIn="@layout/activity_donation">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:layout_alignParentTop="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/DonationMsg"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginEnd="@dimen/margin_10"
+                android:textColor="@color/colorWhite"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+
+                android:textSize="@dimen/textSize_20" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                card_view:cardCornerRadius="2dp"
+                app:cardElevation="4dp"
+                android:layout_margin="@dimen/margin_5"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rl_donation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_10"
+                    android:background="@color/colorInnerScreenSecondary"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_donation_label1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/iv_donation_clip"
+                        android:layout_marginEnd="@dimen/margin_5"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="@dimen/margin_5"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:textColor="@color/colorTextTitle"
+                        android:text="@string/DonationLabel1"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/textSize_18" />
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_donation_label1"
+                        android:layout_marginEnd="@dimen/margin_5"
+                        android:layout_marginStart="@dimen/margin_5"
+                        android:textColor="@color/colorTextTitle"
+                        android:text="@string/DonationLabel2"
+                        android:textSize="@dimen/textSize_16" />
+
+                    <ImageView
+                        android:id="@+id/iv_donation_clip"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/ic_copy_clip"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
