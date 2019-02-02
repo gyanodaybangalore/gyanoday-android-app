@@ -60,12 +60,12 @@
     <string name="title_activity_donation">Donation</string>
 
     <string name="DonationLabel1">Sri Gyanoday Digambar Jain Trust</string>
-    <string name="DonationLabel2">State Bank of India, PBB Branch Koramangala, Bangalore\nCurrent account number – 33061339163\nIFSC code - SBIN0004163\nTrust PAN Number - AANTS4047E</string>
+    <string name="DonationLabel2">State Bank of India, PBB Branch Koramangala, Bangalore\nCurrent account number – 33061339163\nIFSC code - SBIN0004163</string>
 
 
     <string name="DonationMsg">दान के लिए वर्तमान ही सबसे उचित समय है</string>
     <string name="title_activity_rule">Niyam</string>
-    <string name="title_activity_tirth">Teerth</string>
+    <string name="title_activity_tirth">Tirth</string>
     <string name="title_activity_gallery">Gallery</string>
 
 
@@ -101,5 +101,7 @@
     <string name="menu_tirth_hindi">तीर्थ</string>
     <string name="menu_feedback_hindi">सुझाव</string>
     <string name="menu_niyam_hindi">नियम</string>
+
+    <string name="jai_jinendra">|| जय जिनेन्द्र  ||</string>
 
 </resources>

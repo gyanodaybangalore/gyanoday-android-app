@@ -23,7 +23,7 @@
         android:layout_marginTop="@dimen/margin_10"
         android:gravity="center"
         android:shadowColor="@color/cardview_dark_background"
-        android:text="|| जय जिनेन्द्र "
+        android:text="@string/jai_jinendra"
         android:textColor="@color/colorAccent"
         android:textSize="30sp"
         android:textStyle="bold"

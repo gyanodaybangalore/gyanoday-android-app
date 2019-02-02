@@ -55,6 +55,7 @@ public class DbHelper extends SQLiteOpenHelper{
         if (dbExist) {
         } else {
             this.getReadableDatabase();
+            this.close();
             try {
                 copyDataBase();
             } catch (IOException e) {
@@ -66,7 +67,7 @@ public class DbHelper extends SQLiteOpenHelper{
     private boolean checkDataBase() {
         SQLiteDatabase checkDB = null;
         try {
-            String myPath = DB_PATH + DATABASE_NAME;
+            String myPath = mContext.getDatabasePath(DATABASE_NAME).getPath();
             checkDB = SQLiteDatabase.openDatabase(myPath, null, SQLiteDatabase.OPEN_READONLY);
         } catch (SQLiteException e) {
         }
@@ -96,9 +97,9 @@ public class DbHelper extends SQLiteOpenHelper{
     }
 
     public void openDataBase() throws SQLException {
-        String myPath = DB_PATH + DATABASE_NAME;
+//        String myPath = DB_PATH + DATABASE_NAME;
+        String myPath = mContext.getDatabasePath(DATABASE_NAME).getPath();
         mSqliteDatabase = SQLiteDatabase.openDatabase(myPath, null, SQLiteDatabase.OPEN_READONLY);
-
     }
 
     @Override
@@ -198,5 +199,9 @@ public class DbHelper extends SQLiteOpenHelper{
         return list;
     }
 
-
+    @Override
+    public void onOpen(SQLiteDatabase db) {
+        super.onOpen(db);
+        db.disableWriteAheadLogging();
+    }
 }

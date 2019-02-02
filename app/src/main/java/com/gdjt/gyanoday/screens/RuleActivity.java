@@ -104,7 +104,7 @@ public class RuleActivity extends AppCompatActivity {
 
 
     private void handleChildSelection(){
-        int randomNumer = new Random().nextInt(((mChildList.size() -1) - 0) + 1) + 0;
+        int randomNumer = new Random().nextInt(Math.abs(((mChildList.size() -1) - 0) + 1) + 0);
         NiyamBean curBean = mChildList.get(randomNumer);
         String htmlStr = curBean.getName().replace("\n", "<br>");
         if( Build.VERSION.SDK_INT >= Build.VERSION_CODES.N){
@@ -118,7 +118,7 @@ public class RuleActivity extends AppCompatActivity {
     }
 
     private void handleAdultSelection(){
-        int randomNumer = new Random().nextInt(((mAdultList.size() -1) - 0) + 1) + 0;
+        int randomNumer = new Random().nextInt(Math.abs(((mAdultList.size() -1) - 0) + 1)  + 0);
         NiyamBean curBean = mAdultList.get(randomNumer);
         String htmlStr = curBean.getName().replace("\n", "<br>");
         if( Build.VERSION.SDK_INT >= Build.VERSION_CODES.N){
