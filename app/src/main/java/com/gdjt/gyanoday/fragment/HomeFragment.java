@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.daimajia.slider.library.SliderTypes.BaseSliderView;
@@ -28,6 +29,7 @@ import com.gdjt.gyanoday.screens.DonationActivity;
 import com.gdjt.gyanoday.screens.FeedbackActivity;
 import com.gdjt.gyanoday.screens.GalleryActivity;
 import com.gdjt.gyanoday.screens.NotificationActivity;
+import com.gdjt.gyanoday.screens.PanchKalanakActivity;
 import com.gdjt.gyanoday.screens.PoojaActivity;
 import com.gdjt.gyanoday.screens.RuleActivity;
 import com.gdjt.gyanoday.screens.TirthActivity;
@@ -174,6 +176,14 @@ public class HomeFragment extends Fragment {
                 Log.d("WheelPoistion","Cureent selected position "+position);
                 selectedItemTitle.setText(menuItemNameList[position]);
                 selectedItemHindiTitle.setText(menuHindiItemNameList[position]);
+            }
+        });
+
+        Button panchKalanakBtn = mMainView.findViewById(R.id.btnHomePanchKalyanak);
+        panchKalanakBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), PanchKalanakActivity.class));
             }
         });
 
