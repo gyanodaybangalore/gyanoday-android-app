@@ -1,11 +1,10 @@
-<?xml version="1.1" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.gdjt.gyanoday">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -14,22 +13,26 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
+        android:name=".GyanodayApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:name=".GyanodayApplication">
-        <service
-            android:name=".services.NotificationService">
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".screens.PanchKalanakActivity"
+            android:label="@string/title_activity_panch_kalanak"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <service android:name=".services.NotificationService">
             <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
 
         <activity
-            android:name="com.gdjt.gyanoday.screens.SplashActivity"
+            android:name=".screens.SplashActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
@@ -41,26 +44,26 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.gdjt.gyanoday.screens.MainActivity"
+            android:name=".screens.MainActivity"
             android:label="@string/title_activity_main"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.gdjt.gyanoday.screens.PoojaActivity"
+            android:name=".screens.PoojaActivity"
             android:label="@string/title_jinvani"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.gdjt.gyanoday.screens.TrustActivity"
+            android:name=".screens.TrustActivity"
             android:label="@string/title_activity_trust"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.gdjt.gyanoday.screens.NotificationActivity"
+            android:name=".screens.NotificationActivity"
             android:label="@string/title_activity_notification"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.gdjt.gyanoday.screens.NotificationDetailsActivity"
+            android:name=".screens.NotificationDetailsActivity"
             android:label="@string/title_activity_notification_details"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -77,52 +80,62 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name="com.gdjt.gyanoday.screens.ContactUsActivity"
+            android:name=".screens.ContactUsActivity"
             android:label="@string/title_activity_contact_us"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.gdjt.gyanoday.screens.FeedbackActivity"
+            android:name=".screens.FeedbackActivity"
             android:label="@string/title_activity_feedback"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name="com.gdjt.gyanoday.screens.DonationActivity"
+            android:name=".screens.DonationActivity"
             android:label="@string/title_activity_donation"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.gdjt.gyanoday.screens.RuleActivity"
+            android:name=".screens.RuleActivity"
             android:label="@string/title_activity_rule"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.gdjt.gyanoday.screens.TirthActivity"
+            android:name=".screens.TirthActivity"
             android:label="@string/title_activity_tirth"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.gdjt.gyanoday.screens.GalleryActivity"
+            android:name=".screens.GalleryActivity"
             android:label="@string/title_activity_gallery"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.gdjt.gyanoday.screens.GeneralListActivity"
+            android:name=".screens.GeneralListActivity"
             android:label="@string/title_activity_general_list"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.gdjt.gyanoday.screens.GeneralDetailsActivity"
+            android:name=".screens.GeneralDetailsActivity"
             android:label="@string/title_activity_general_details"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.gdjt.gyanoday.screens.TampleListActivity"
+            android:name=".screens.TampleListActivity"
             android:label="@string/title_activity_tample_list"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.gdjt.gyanoday.screens.ImageActivity"
+            android:name=".screens.ImageActivity"
             android:label="@string/title_activity_image"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".screens.PatraActivity"
+            android:label="@string/chayanit_patra_label"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

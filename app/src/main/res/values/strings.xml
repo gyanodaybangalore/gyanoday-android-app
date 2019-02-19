@@ -103,5 +103,9 @@
     <string name="menu_niyam_hindi">नियम</string>
 
     <string name="jai_jinendra">|| जय जिनेन्द्र  ||</string>
+    <string name="title_activity_panch_kalanak">पंचकल्याणक २०१९</string>
+    <string name="panchkalyank_label">Panchkalyanak 2019</string>
+
+    <string name="chayanit_patra_label">पंचकल्याणक चयनित पात्र </string>
 
 </resources>

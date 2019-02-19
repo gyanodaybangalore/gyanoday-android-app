@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Gyanodaya.iml" filepath="$PROJECT_DIR$/Gyanodaya.iml" />
       <module fileurl="file://$PROJECT_DIR$/WheelViewLib/WheelViewLib.iml" filepath="$PROJECT_DIR$/WheelViewLib/WheelViewLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/gyanodayaapp.iml" filepath="$PROJECT_DIR$/gyanodayaapp.iml" />
     </modules>
   </component>
 </project>
